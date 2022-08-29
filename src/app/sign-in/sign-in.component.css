@@ -1,0 +1,75 @@
+.container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  margin: auto;
+  margin-top: 7vw;
+}
+
+.pic {
+  /* border: 1px solid red; */
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.pic > img {
+  width: 140%;
+}
+
+.text {
+  color: #313131;
+  text-align: center;
+  z-index: 10000;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.text > h3 {
+  font-size: 3vw;
+}
+.text > p {
+  font-size: 1.2vw;
+}
+
+.form {
+  /* border: 1px solid red; */
+  background: whitesmoke;
+  width: 50%;
+  padding: 0 5%;
+  color: #313131;
+}
+form > h3 {
+  font-size: 3vw;
+  padding: 10% 0;
+}
+form > div {
+  margin-bottom: 1vw;
+}
+form>div>label{
+  font-size: 1.3vw;
+}
+form > div > input {
+  border: none;
+  border-bottom: 0.1vw solid black;
+  background: none;
+  width: 100%;
+  height: 3vw;
+  padding: 5%;
+  outline: none;
+  font-size: 1.2vw;
+}
+
+form > div > button {
+  border: none;
+  color: white;
+  background: black;
+  padding: 1vw;
+  font-size: 1.6vw;
+  font-weight: bold;
+  transition: 0.5s;
+}
+form > div > button:hover {
+  background: red;
+  cursor: pointer;
+}

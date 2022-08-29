@@ -1,0 +1,169 @@
+.container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  /* position: relative; */
+}
+
+.left {
+  /* border: 1px solid red; */
+  width: 70%;
+  padding: 2vw;
+}
+
+table {
+  background: whitesmoke;
+}
+
+tr {
+  border-bottom: 0.01vw solid grey;
+}
+
+table,
+th,
+td {
+  /* border: 1px solid red; */
+  border-collapse: collapse;
+  width: 100%;
+  padding: 1vw;
+}
+table > tr > th {
+  padding: 0.5vw;
+}
+table > tr > th > h1 {
+  font-size: 2vw;
+}
+table > tr > th > p {
+  font-size: 1.2vw;
+  color: #313131;
+}
+
+tr > td > img {
+  width: 10vw;
+}
+
+.info {
+  width: 40vw;
+}
+.info > p {
+  font-size: 1.3vw;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.info > span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2vw;
+}
+.info > button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.2vw;
+  color: red;
+  margin-top: 1vw;
+}
+.info > button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+td > b {
+  font-size: 1.5vw;
+}
+
+.right {
+  /* border: 1px solid red; */
+  width: 30%;
+  padding: 2vw;
+}
+
+.to-checkout {
+  /* border: 1px solid red; */
+  background: whitesmoke;
+  padding: 2vw;
+}
+.to-checkout > p {
+  font-size: 1.3vw;
+  margin-bottom: 2vw;
+}
+
+.to-checkout > button {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1.2vw;
+  background-color: black;
+  color: whitesmoke;
+  padding: 0.5vw;
+  transition: 0.5s;
+}
+.to-checkout > button:hover {
+  background: red;
+  cursor: pointer;
+}
+
+.modal {
+  /* border: 1px solid red; */
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 2vw;
+}
+
+.modal>button{
+  border: none;
+  outline: none;
+  /* width: 100%; */
+  font-size: 1.2vw;
+  /* background-color: black; */
+  background-color: red;
+  color: whitesmoke;
+  padding: 0.5vw;
+  transition: 0.5s;
+}
+.modal>button:hover{
+  /* background: red; */
+  background: #e7e6dd;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.checkout {
+  /* border: 1px solid red; */
+  background: whitesmoke;
+  width: 20vw;
+  padding: 2vw;
+  position: absolute;
+  /* top: 30%; */
+  top: 15vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.checkout > div {
+  /* border: 1px solid red; */
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+.checkout > div > p {
+  font-size: 1.2vw;
+}
+.checkout > div > h3 {
+  font-size: 2vw;
+}

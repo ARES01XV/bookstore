@@ -1,0 +1,113 @@
+<app-header></app-header>
+
+<div class="container">
+  <nav>
+    <button [routerLink]="['item', category._id]" *ngFor="let category of category">{{category.category}}</button>
+    <!-- <button (click)="toggle('aa')">Action & Adventure</button> -->
+    <!-- <button (click)="toggle('classics')">Classics</button>
+    <button (click)="toggle('comics')">Comics & Graphic Novels</button>
+    <button (click)="toggle('fantasy')">Fantasy</button>
+    <button (click)="toggle('horror')">Horror</button> -->
+  </nav>
+  <router-outlet></router-outlet>
+
+  <!-- <div class="aa" id="aa" *ngIf="aa">
+    <div class="book">
+      <div class="book_image">
+        <img
+          src="https://blackwells.co.uk/jacket/l/9781781100080.jpg"
+        />
+        <div class="overlay">
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+      </div>
+      <div class="details">
+        <div class="info">
+          <p href="#">Chamber of Secrets</p>
+          <span>J.K. Rowling</span>
+        </div>
+        <p href="#" class="price">$10</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="classics" id="classics" *ngIf="classics">
+    <div class="book">
+      <div class="book_image">
+        <img
+          src="https://i.pinimg.com/originals/2f/c6/f6/2fc6f635a56c1341d26bba4864a8f208.jpg"
+        />
+        <div class="overlay">
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+      </div>
+      <div class="details">
+        <div class="info">
+          <p href="#">Chamber of Secrets</p>
+          <span>J.K. Rowling</span>
+        </div>
+        <p href="#" class="price">$10</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="comics" id="comics" *ngIf="comics">
+    <div class="book">
+      <div class="book_image">
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/I/91Y2W+BBrfL.jpg"
+        />
+        <div class="overlay">
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+      </div>
+      <div class="details">
+        <div class="info">
+          <p>Chamber of Secrets</p>
+          <span>J.K. Rowling</span>
+        </div>
+        <p class="price">$10</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="fantasy" id="fantasy" *ngIf="fantasy">
+    <div class="book">
+      <div class="book_image">
+        <img
+          src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0074/9780007448036.jpg"
+        />
+        <div class="overlay">
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+      </div>
+      <div class="details">
+        <div class="info">
+          <p href="#">Chamber of Secrets</p>
+          <span>J.K. Rowling</span>
+        </div>
+        <p href="#" class="price">$10</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="horror" id="horror" *ngIf="horror">
+    <div class="book">
+      <div class="book_image">
+        <img
+          src="https://www.leighbardugo.com/wp-content/uploads/2018/04/shadow-bone.jpg"
+        />
+        <div class="overlay">
+          <a href="#" class="btn">Add to cart</a>
+        </div>
+      </div>
+      <div class="details">
+        <div class="info">
+          <p href="#">Chamber of Secrets</p>
+          <span>J.K. Rowling</span>
+        </div>
+        <p href="#" class="price">$10</p>
+      </div>
+    </div>
+  </div> -->
+</div>

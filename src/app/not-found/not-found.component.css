@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+.container {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 89vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5%;
+}
+
+.right {
+  /* border: 1px solid red; */
+  width: 50%;
+  padding: 3vw;
+}
+
+.right > h1 {
+  font-family: "Poiret One", cursive;
+  font-size: 10vw;
+  text-align: center;
+}
+.right > h2 {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+.right > p {
+  font-size: 1.2vw;
+  margin-bottom: 2vw;
+}
+
+.right > button {
+  border: none;
+  outline: none;
+  color: white;
+  /* background: black; */
+  background: black;
+  padding: 1vw;
+  font-size: 1.6vw;
+  font-weight: bold;
+  transition: 1s;
+  font-size: 1.2vw;
+}
+.right > button:hover {
+  background: red;
+  cursor: pointer;
+}
+
+.left {
+  /* border: 1px solid red; */
+  position: relative;
+  width: 50%;
+  padding: 1vw;
+}
+
+.left>img{
+    /* border: 1px solid red; */
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translateY(-50%); */
+}
+
+.container>svg{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}

@@ -1,0 +1,31 @@
+<div class="container">
+  <form action="" [formGroup]="add_books" (submit)="add_book()" >
+    <h1>Add new book</h1>
+
+    <div>
+      <label for="image">Image URL</label><br />
+      <input type="text" id="image_url" name="image_url" formControlName="image_url" />
+    </div>
+    <div>
+      <label for="name">Book Name</label><br />
+      <input type="text" name="book_name" id="book_name" formControlName="book_name"  />
+    </div>
+    <div>
+      <label for="author">Author</label><br />
+      <input type="text" id="author" name="author" formControlName="author"/>
+    </div>
+    <div>
+      <label for="price">Price</label><br />
+      <input type="text" id="price" name="price" formControlName="price"/>
+    </div>
+    <div>
+      <label for="category">Category</label><br />
+      <select name="categoryID" id="categoryID" formControlName="categoryID">
+        <option *ngFor="let category of categories" value="{{category._id}}">{{category.category}}</option>
+      </select>
+    </div>
+    <div>
+        <button type="submit">Add book</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,42 @@
+.container {
+  /* border: 1px solid red; */
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left {
+  width: 50%;
+}
+.left > h1 {
+  font-size: 3vw;
+  letter-spacing: 0.2vw;
+  line-height: 170%;
+}
+.left > p {
+  font-size: 1.2vw;
+}
+.left > a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 1vw;
+  font-size: 1.6vw;
+  font-weight: bold;
+  transition: 1s;
+}
+.left > a:hover {
+  background: red;
+}
+
+.right {
+  /* border: 1px solid red; */
+  width: 50%;
+}
+.right > img {
+  /* border: 1px solid green; */
+  width: 100%;
+  margin-top: -11vw;
+}

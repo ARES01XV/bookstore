@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card">
+    <div class="img">
+      <img src="{{ books.image_url }}" />
+    </div>
+    <div class="info">
+      <p>{{ books.book_name }}</p>
+      <span>by {{ books.author }}</span
+      ><br />
+      <p class="price">$ {{ books.price }}.00</p>
+      <form action="" (submit)="add_item()" [formGroup]="addToCart">
+        <input type="text" name="productID" formControlName="productID" hidden/>
+        <button type="submit">Add to cart</button>
+      </form>
+    </div>
+  </div>
+</div>
