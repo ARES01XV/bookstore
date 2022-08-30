@@ -15,7 +15,7 @@ import { ItemComponent } from './item/item.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'sign_in', component: SignInComponent },
+  { path: 'login', component: SignInComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'home', component: HomeComponent },
   {

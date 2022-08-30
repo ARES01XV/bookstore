@@ -73,3 +73,7 @@ form > div > button:hover {
   background: red;
   cursor: pointer;
 }
+
+.error>small{
+  color: red; 
+}

@@ -38,19 +38,17 @@
 </div>
 
 <div class="modal" *ngIf="checkout">
-
-  <button (click)="hide_checkout()">
-    <i class="fa-solid fa-circle-chevron-left"></i>
-    Back
-  </button>
+  <div class="hide_checkout" (click)="hide_checkout()">
+    <i class="fa-solid fa-circle-xmark"></i>
+  </div>
 
   <div class="checkout">
     <div>
       <p>total:</p>
       <h3>{{ total_Price | currency }}</h3>
     </div>
-    <button>
-      <app-paypal-button> create order and pass here </app-paypal-button>
-    </button>
+    <div id="paypal">
+      <!-- <app-paypal-button> create order and pass here </app-paypal-button> -->
+    </div>
   </div>
 </div>

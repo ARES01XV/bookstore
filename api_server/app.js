@@ -30,6 +30,7 @@ mongoose
             `Connected to MongoDB Successfully! Database name: "${x.connections[0].name}"`
         );
     })
+    
 const server = app.listen(PORT, () =>
     console.log(`Connected to http://localhost:${PORT}`)
 );

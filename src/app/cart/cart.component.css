@@ -2,7 +2,6 @@
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-evenly;
-  /* position: relative; */
 }
 
 .left {
@@ -111,35 +110,19 @@ td > b {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 2vw;
+  padding: 4vw;
 }
 
-.modal>button{
-  border: none;
-  outline: none;
-  /* width: 100%; */
-  font-size: 1.2vw;
-  /* background-color: black; */
-  background-color: red;
-  color: whitesmoke;
-  padding: 0.5vw;
-  transition: 0.5s;
+.fa-circle-xmark {
+  /* border: 1px solid red; */
+  float: right;
+  font-size: 3vw;
+  color: white;
 }
-.modal>button:hover{
-  /* background: red; */
-  background: #e7e6dd;
-  color: black;
+.fa-circle-xmark:hover {
+  color: red;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
 
 .checkout {
   /* border: 1px solid red; */
@@ -147,7 +130,6 @@ td > b {
   width: 20vw;
   padding: 2vw;
   position: absolute;
-  /* top: 30%; */
   top: 15vw;
   left: 50%;
   transform: translateX(-50%);

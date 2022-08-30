@@ -11,7 +11,7 @@
   </div>
 
   <div class="form">
-    <form action="">
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
       <h3>Log in</h3>
       <div>
         <label for="email">Email:</label><br />
@@ -20,7 +20,14 @@
           name="email"
           id="email"
           placeholder="johndoe@mail.com"
+          formControlName="email"
         />
+        <div class="error" *ngIf="fc['email'].errors && isSubmitted">
+          <small *ngIf="fc['email'].errors['required']"
+            >Email should not be empty</small
+          >
+          <small *ngIf="fc['email'].errors['email']">Email is not valid</small>
+        </div>
       </div>
       <div>
         <label for="password">Password:</label><br />
@@ -29,12 +36,16 @@
           name="password"
           id="password"
           placeholder="●●●●●●●●"
+          formControlName="password"
         />
+        <div class="error" *ngIf="fc['password'].errors && isSubmitted">
+          <small *ngIf="fc['password'].errors['required']"
+            >Password should not be empty</small
+          >
+        </div>
       </div>
       <div>
-        <button>
-            Log in
-        </button>
+        <button type="submit">Log in</button>
       </div>
     </form>
   </div>

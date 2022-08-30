@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Books } from '../interfaces/book.interface';
+import { filter } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +17,9 @@ export class BookService {
   }
 
   get_Category_Books(id: any): Observable<any> {
-    return this.http.get<Books>(`${this.base_Url + 'get_category_books'}/${id}`);
+    return this.http.get<Books>(
+      `${this.base_Url + 'get_category_books'}/${id}`
+    );
   }
 
   create_Book(data: any): Observable<Books> {
@@ -36,6 +39,6 @@ export class BookService {
   }
 
   admin_get_books(): Observable<Books> {
-    return this.http.get<Books>(`${this.base_Url + 'admin_books'}`)
+    return this.http.get<Books>(`${this.base_Url + 'admin_books'}`);
   }
 }
